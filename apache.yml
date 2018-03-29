@@ -1,4 +1,5 @@
-- name: install keystone package
-      apt: name={{item}} state=latest
-      with_items: 
-        - apache2
+---
+  - name: install keystone package
+    apt: name={{item}} state=latest
+    with_items: 
+      - apache2
